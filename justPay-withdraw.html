@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Withdrawal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+<style type="text/css">
+	   html{
+      	height: 100%;
+      	animation: move;
+      	animation-duration: 3s;
+      }
+      @keyframes move{
+      	from{opacity: 0}
+      	to{
+      		opacity: 1;
+      	}
+      }
+	
+
+
+h3 .float-right{
+	color: green;
+	font-size: 20px;
+}
+h3 .back{
+	color: black;
+	font-size: 30px;
+	padding: 10px;
+	margin: 10px;
+}
+
+
+button{
+	width: 100%;
+	background: lavender;
+	color: indigo;
+	border: none;
+	border-radius: 20px;
+
+}
+
+button .money{
+	background: indigo;
+	color: white;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 50%;
+	height: 25px;
+width: 25px;
+font-size: 12px;
+font-weight: bolder;
+margin-right: 10px;
+
+
+}
+
+button .number{
+	font-size: 30px;
+	font-weight: bolder;
+	margin-left: 5px;
+
+
+
+	}
+
+	.enter{
+		width: 100%;
+		height: 60px;
+		border: none;
+		font-size: 20px;
+		color: white;
+		background: transparent;
+		border-radius: 25px;
+
+
+	}
+	#first{
+		background: white;
+		margin: 0;
+	}
+.btn{
+	background: #F0F8FF;
+	width: 100%;
+	padding: 10px;
+	
+
+}
+
+.btn button{
+	border-radius: 13.3px;
+	
+}
+
+select{
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	border: none;
+	background: transparent;
+	font-size: 20px;
+	color: grey;
+}
+
+
+form #Divine{
+	background: green;
+	color: white;
+	height: 40px;
+	width: 100%;
+	font-weight: bolder;
+
+}
+
+
+.select{
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	border: none;
+	background: white;
+	font-size: 20px;
+	color: grey;
+
+}
+
+
+
+.parent{
+	display: flex;
+	gap: 10px 20px;
+}
+
+.parent button{
+	background: transparent;
+}
+
+
+.parent .container-fluid button:active,
+.parent .container-fluid button:focus,
+.parent .container-fluid button:hover{
+	border-bottom: 2px solid green;
+	color: green;
+}
+
+
+.nxt{
+	background: green;
+	color: white;
+	text-align: center;
+	font-weight: bolder;
+}
+
+
+
+
+@media screen and (max-width:750px){
+	h3{
+		font-size: 20px;
+	}
+	.btn button{
+		display: flex;
+		flex-wrap: nowrap;
+	font-size: 10px;
+	height: 35px;
+	}
+}
+
+body{
+	color: white;
+}
+
+.footer{
+	color: navy;
+}
+
+</style>
+
+
+
+
+ </head>
+ <body class="bg-dark">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
+<div class="jumbotron p-4 bg-dark">
+	<div class="row bg-dark">
+		<div class="col-sm-6 bg-dark" id="first">
+			 <h3><a href="JustPay.html">  <i class="fa fa-chevron-left"></i></a> Transfer to bank <span class="float-right">History</span>  </h3>
+			   <br>
+			   <br>
+			   <hr>
+
+			<div class="btn">   
+			   <button class="btn-group btn-lg"><span>ZAR/&#8358</span> : <span class="number" > </span>Offshore Transaction detected   </button></div>
+
+			   <br>
+			   <br>
+
+			   <hr>
+
+			   <form>
+			   	
+           <h3>Recipient Account</h3>
+           <br>
+           <input class="enter" type="number" placeholder="Enter 10 digits Account Number" name="name" min="11" max="11">
+
+           <br>
+           <br>
+           <select>
+
+           	<option>Select Bank</option>
+           	<option>Access Bank</option>
+           	<option>AB Microfinance Bank</option>
+           	<option>AG Mortgage Bank</option>
+           	<option>AKU Microfinance Bank Limited</option>
+           	<option>ASOSavings & Loan</option>
+           	<option>AWACASH MICROFINANCE BANK</option>
+           	<option>Abbey Mortgage Bank</option>
+           		<option>Access Money</option>
+           	<option>Access Y'ello & Beta</option>
+           	<option>Accion MFB</option>
+           	<option>Addosser Microfinance Bank</option>
+           	<option>BAM Microfinace Bank</option>
+           	<option>BANC CORP MICROFINANCE BANK</option>
+           	<option>BOSAK MFB</option>
+           		<option>Balera Microfinance Bank</option>
+           	<option>Bankly Microfinance Bank</option>
+           	<option>Baobab Microfinance Bank</option>
+           	<option>Beststar MFB</option>
+           	<option>Bethel Microfinance Bank</option>
+           	<option>Boctrust Microfinance Limited</option>
+           	<option>Borstal Microfinance Bank</option>
+           		<option>Branch International Fiancial Services</option>
+           	<option>Brent Mortgage Bank</option>
+           	<option>Brightway Microfinance Bank</option>
+           	<option>Build Microfinance Bank</option>
+           	<option>Bunkure Microfinance Bank</option>
+           	<option>BuyPower Microfinance Bank</option>
+           	<option>CORESTEP MFB</option>
+           		<option>CROSS RIVER MICROOFINANCE LTD</option>
+           	<option>Capstone Microfinance</option>
+           	<option>Ecobank PLC</option>
+           	<option>Zenith Bank PLC</option>
+           	<option>Union Bank PLC</option>
+           	<option>First Bank</option>
+           	<option>Polaris Bank</option>
+            <option>Paycom Opay MFB</option>
+           </select>
+           
+
+<br>
+<br>
+
+
+ <!-- Button to Open the Modal -->
+  <button type="button" class="nxt btn-lg" data-toggle="modal" data-target="#myModal">
+    Next
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content text-danger">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Duplicate Transactions detected</h4>
+         
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Lecia Muhethando, You are execution a duplicate transaction. 
+          <br>
+          Risk management was triggered and a restriction to your account for 24 hours has begun
+
+<br>
+<br>
+
+
+
+          For assistance contact  <a href="#kentech.html">Helplink</a>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger text-primary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+
+
+			   </form>
+
+
+
+
+
+
+
+
+		</div>
+		<br>
+		<hr>
+
+		<div class="col-sm-6">
+
+<select class="select">
+	
+	<option>Real-time Bank Network Monitor</option>
+	
+
+</select>
+<hr>
+
+<br>
+<br>
+
+<div class="row">
+	<div class="col-sm-4">
+	<button class="btn-group btn-lg btn-light" type="button" data-toggle="collapse" data-target="#recent">Recents</button> 
+	<hr>
+  <br>
+ 
+
+<div id="recent" class="collapse show">
+	<h6>Rita somadina chude</h6>
+	<small>7033141051 Paycom NG</small>
+	<br>
+	<hr>
+<h6>Tsuando Nu</h6>
+	<small>3014267244 Service Bank SA</small>
+	<br>
+	<hr>
+	<h6>Mena Bukulua</h6>
+	<small>8736373637 Luis Bank SA</small>
+	<br>
+	<hr>
+	<button class="btn-group btn-lg btn-light">See all</button>
+</div>
+</div>
+
+
+
+
+
+<div class="col-sm-4">
+
+
+ 	<button class="btn-group btn-lg btn-light" type="button" data-toggle="collapse" data-target="#fav">Favourites</button> 
+
+<hr>
+<br>
+
+ 	<div id="fav" class="collapse">
+ 		<h6>All your favourites will appear here</h6>
+ 		<small>Family and friends</small>
+ 		
+ 	</div>
+
+ 	
+
+
+
+</div>
+
+
+   <div class="col-sm-2">
+   	
+ <button class="btn-group  btn-light"> <i class="fa fa-search"></i>  </button> 
+
+
+   </div>
+
+
+
+
+
+     </div>
+
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jumbotron p-3 footer slideanim">
+          <h3 class="text-center text-primary">JustPay.com!</h3>
+
+  <div class="row slideanim">
+    <div class="col-sm-6 slideanim">
+
+
+ 
+    
+
+
+<ul>    
+<li class="list-group-item"> <i id="icon" class="fas fa-lock"></i> My Account</li>
+<li class="list-group-item"><i id="icon" class="fas fa-user-lock"></i> Login</li>
+<li class="list-group-item"><i id="icon" class="fas fa-book"></i>   Register</li>
+<li class="list-group-item"><i id="icon" class="fas fa-pen"></i>  Feedback</li>
+<li class="list-group-item"><i id="icon" class="fas fa-link"></i>  Privacy Policy</li>
+<li class="list-group-item"><i id="icon" class="fas fa-lock"></i>  Terms of Service for Using JustPay</li>
+
+</ul>
+</div>
+  
+
+
+<div class="col-sm-6 slideanim">
+<ul>
+<li class="list-group-item"><i id="icon" class="fas fa-home"></i>Home  </li>
+<li class="list-group-item"><i id="icon" class="fas fa-user"></i>   About</li>  
+<li class="list-group-item"><i id="icon" class="fas fa-laptop"></i>   Promotions</li> 
+<li class="list-group-item"> <i id="icon" class="fas fa-phone"></i> Contact</li>
+<li class="list-group-item"><i id="icon" class="fas fa-info"></i>  Information</li>
+<li class="list-group-item"><i id="icon" class="fas fa-link"></i> Learn More</li>
+
+</ul>
+</div>
+
+
+<div class="container-fluid slideanim">
+  <p>&copy 2024 All rights reserved | Created By *Kenny Akeem*  </p>
+</div>
+</div>
+</div>
+
+  
+
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+
+
+
+$(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+
+
+
+
+//javascript for animation
+
+let slideIndex = 0;
+showSlides ();
+
+function showSlides () {
+  let i;
+  let slides =
+  document.getElementsByClassName ("mySlides");
+  for (i =0; i < slides.length; i++) {
+    slides [i].style.display= "none";}
+
+    slideIndex++;
+
+    if ( slideIndex > slides.length)
+
+     {slideIndex=1}
+
+      slides [slideIndex-1].style.display="block";
+
+
+      setTimeout (showSlides, 2000); //change image every 2 seconds
+}
+
+
+
+function changeIcon(anchor) {
+  var icon = anchor.querySelector("i");
+  icon.classList.toggle('bx-show');
+  icon.classList.toggle('bx-hide');
+
+
+  anchor.querySelector("span").textContent = icon.classList.contains('bx-show') ? "*****" : anchor.querySelector("span");
+}
+
+</script>
+
+
+
+
+</body>
+</html>
